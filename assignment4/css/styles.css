@@ -1,0 +1,247 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header{
+    background-image: url(../img/header.jpg);
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+}
+
+header::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+h1{
+    font-size: 3.5em;
+    color: white;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+.logo{
+    width: 20%;
+    height: auto;
+    z-index: 10;
+}
+
+/* navagation bar */
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.navBar nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-weight: bold;
+
+}
+
+.navBar ul {
+    list-style: none;
+    display: flex;
+    z-index: 10;
+}
+
+.navBar ul li {
+    margin: 0 10px;
+}
+
+.navBar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.arrow {
+    position: absolute;
+    top: 85%;
+    left: 49%;
+    bottom: 20px;
+    width: 30px;
+    height: 30px;
+    border-left: 5px solid white;
+    border-bottom: 5px solid white;
+    animation: bounce 1.5s infinite;
+    z-index: 10;
+    margin-bottom: 0;
+}
+@keyframes bounce {
+    0%, 100% { transform: translateY(0) rotate(-45deg); }
+    50% { transform: translateY(10px) rotate(-45deg); }
+}
+
+/*cta boxes*/
+.ctaSection {
+    display: flex;
+    justify-content: center;
+}
+
+.ctaBox span {
+    position: relative;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    z-index: 2;
+    padding: 70px;
+    border: 2px solid white;
+}
+
+.ctaOne {
+    background-image: url(../img/ctaOne.jpg);
+    position: relative;
+    width: 45%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ctaTwo {
+    background-image: url(../img/ctaTwo.jpg);
+    position: relative;
+    width: 45%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* sections */
+.rowOne{
+    text-align: center;
+    background: #f4f4f4;
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+.rowTwo {
+    text-align: center;
+    padding: 20px 40px;
+    background: #072d67;
+    color: white;
+    padding-top: 10px;
+}
+
+.rowThree{
+    text-align: center;
+    padding: 120px 40px;
+    color: white;
+    background-image: url(../img/hoverOne.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.rowOne p {
+    padding-bottom: 30px;
+    line-height: 1.3;
+}
+
+.rowTwo p{
+    line-height: 1.4;
+}
+
+/* hover Boxes */
+.hoverSection{
+    display: flex;
+    gap: 10px;
+}
+
+.hoverBox {
+    position: relative;
+    font-size: 30px;
+    border: 2px solid white;
+    padding: 20px 60px;
+    transition: 0.3s;
+}
+
+.hoverBox:hover {
+    background: white;
+    color: #5e35b1;
+}
+
+/* contact */
+.contact {
+    background: #5e35b1;
+    padding: 50px;
+}
+form {
+    max-width: 600px;
+    margin: auto;
+}
+.formGroup {
+    display: flex;
+    gap: 10px;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+}
+
+.contact button {
+    padding: 10px 20px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact button:hover {
+    background: white;
+    color: #5e35b1;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .navBar {
+        background: url(../img/header.jpg) no-repeat center center/cover;
+    }
+    .ctaSection, .hoverBox {
+        flex-direction: column;
+        align-items: center;
+    }
+}
