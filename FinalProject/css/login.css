@@ -1,0 +1,166 @@
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+
+
+/*main body styling*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(217, 174, 128);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 64px;
+    margin-bottom: 60px;
+}
+
+h3{
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 0px #000000
+}
+
+.loginTitle{
+    font-family: 'Tektur', Arial, Helvetica, sans-serif;
+    color: #b94444;
+}
+
+
+
+
+
+
+/* basic form styling*/
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+
+
+/*login form styling*/
+.loginForm {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    text-align: center;
+}
+
+.loginForm input {
+    width: 90%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.loginForm input[type="submit"] {
+    background-color: #b94444;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.loginForm input[type="submit"]:hover {
+    background-color: #8a3232;
+}
+
+.forgot-password {
+    display: block;
+    margin: 10px 0;
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.registerForm {
+    margin-top: 20px;
+}
+
+.registerForm input[type="submit"] {
+    background-color: #777777;
+    padding: 12px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.registerForm input[type="submit"]:hover {
+    background-color: #474747;
+}
+
+
+
+
+
+
+
+
+/* register form styling*/
+.registerPersonForm {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    text-align: center;
+}
+
+.registerPersonForm input {
+    width: 90%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.registerPersonForm input[type="submit"] {
+    background-color: #b94444;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.registerPersonForm input[type="submit"]:hover {
+    background-color: #8a3232;
+}
+
+.loginOld {
+    margin-top: 10px;
+}
+
+.loginOld input[type="submit"] {
+    background-color: #777777;
+    padding: 12px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.loginOld input[type="submit"]:hover {
+    background-color: #474747;
+}
